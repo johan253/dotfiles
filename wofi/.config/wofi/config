@@ -1,4 +1,4 @@
-style=/home/SomeDir/.config/wofi/style.css
+style=~/.config/wofi/style.css
 show=drun
 width=400
 height=400
