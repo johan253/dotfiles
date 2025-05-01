@@ -2,16 +2,16 @@ window {
 	margin: 0px;
 	border: 2px solid #414868;
 	border-radius: 5px;
-	background-color: #24283b;
+	background-color: #04070d;
 	font-family: FiraCode Nerd Font;
 	font-size: 16px;
 }
 
 #input {
 	margin: 5px;
-	border: 1px solid #24283b;
+	border: 1px solid #04070d;
 	color: #c0caf5;
-	background-color: #24283b;
+	background-color: #04070d;
 }
 
 #input image {
@@ -21,13 +21,13 @@ window {
 #inner-box {
 	margin: 5px;
 	border: none;
-	background-color: #24283b;
+	background-color: #04070d;
 }
 
 #outer-box {
 	margin: 5px;
 	border: none;
-	background-color: #24283b;
+	background-color: #04070d;
 }
 
 #scroll {
@@ -42,11 +42,11 @@ window {
 }
 
 #entry:selected {
-	background-color: #414868;
+	background-color: #0d1117;
 	font-weight: normal;
 }
 
 #text:selected {
-	background-color: #414868;
+	background-color: #0d1117;
 	font-weight: normal;
 }
