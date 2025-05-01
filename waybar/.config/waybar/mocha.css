@@ -2,7 +2,7 @@
 @define-color flamingo #f2cdcd;
 @define-color pink #f5c2e7;
 @define-color mauve #cba6f7;
-@define-color red #f38ba8;
+@define-color red #ff7b72;
 @define-color maroon #eba0ac;
 @define-color peach #fab387;
 @define-color yellow #f9e2af;
@@ -17,10 +17,76 @@
 @define-color subtext0 #a6adc8;
 @define-color overlay2 #9399b2;
 @define-color overlay1 #7f849c;
-@define-color overlay0 #6c7086;
+@define-color overlay0 #c9d1d;
 @define-color surface2 #585b70;
 @define-color surface1 #45475a;
 @define-color surface0 #313244;
 @define-color base #1e1e2e;
 @define-color mantle #181825;
-@define-color crust #11111b;
+@define-color crust #0d1117;
+
+/*
+*
+# vim:ft=kitty
+
+## name: GitHub Dark
+## author: GitHub
+## license: MIT
+
+#: The basic colors
+
+foreground #c9d1d9
+background #0d1117
+selection_foreground #0d1117
+selection_background #58a6ff
+
+
+#: Cursor colors
+
+cursor #58a6ff
+
+
+#: Tab bar colors
+
+tab_bar_background #010409
+active_tab_foreground #c9d1d9
+active_tab_background #0d1117
+inactive_tab_foreground #8b949e
+inactive_tab_background #010409
+
+
+#: The basic 16 colors
+
+#: black
+color0 #484f58
+color8 #6e7681
+
+#: red
+color1 #ff7b72
+color9 #ffa198
+
+#: green
+color2 #3fb950
+color10 #56d364
+
+#: yellow
+color3 #d29922
+color11 #e3b341
+
+#: blue
+color4 #58a6ff
+color12 #79c0ff
+
+#: magenta
+color5 #bc8cff
+color13 #d2a8ff
+
+#: cyan
+color6 #39c5cf
+color14 #56d4dd
+
+#: white
+color7 #b1bac4
+color15 #ffffff
+
+*/
