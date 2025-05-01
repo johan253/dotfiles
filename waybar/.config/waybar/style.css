@@ -75,6 +75,12 @@ window#waybar.hidden {
 	background: #383c4a;
 }
 
+@keyframes blink-update {
+	to {
+		background-color: dodgerblue;
+	}
+}
+
 #custom-pacman {
 	padding-left: 16px;
 	padding-right: 16px;
@@ -82,6 +88,14 @@ window#waybar.hidden {
 	transition: none;
 	color: #ffffff;
 	background: #383c4a;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#custom-pacman.pending-updates {
+	animation-name: blink-update;
+	animation-duration: 3s;
 }
 
 #custom-mail {
