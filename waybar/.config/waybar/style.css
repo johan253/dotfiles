@@ -41,11 +41,15 @@ window#waybar.hidden {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
+	color: white;
+}
+
+#workspaces button.active {
+	color: white;
 	transition: none;
 	box-shadow: inherit;
 	text-shadow: inherit;
 	border-radius: inherit;
-	color: #383c4a;
 	background: #7c818c;
 }
 
