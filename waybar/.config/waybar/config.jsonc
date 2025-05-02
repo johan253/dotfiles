@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "custom/pacman"/*, "custom/mail"*/],
     "modules-center": ["clock", "custom/weather"],
-    "modules-right": ["pulseaudio", "custom/mem", "custom/gpu", "cpu", "backlight", "battery", "tray", "custom/nc"],
+    "modules-right": ["pulseaudio", "custom/mem", "custom/gpu", "cpu", "backlight", "battery", "tray", "custom/notification"],
 
 
     //***************************
@@ -124,14 +124,26 @@
         "tooltip": false,
     },
 
-    "custom/nc": {
-        "format": "{}  ",
-        "tooltip": false,
-        "inverval": 10,
-        "exec": "swaync-client --count",
-        "on-click": "swaync-client -t",
-    },
-
+    "custom/notification": {
+     "tooltip": false,
+     "format": "{icon}",
+     "format-icons": {
+       "notification": "<span foreground='red'><sup></sup></span>",
+       "none": "",
+       "dnd-notification": "<span foreground='red'><sup></sup></span>",
+       "dnd-none": "",
+       "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+       "inhibited-none": "",
+       "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+       "dnd-inhibited-none": ""
+     },
+     "return-type": "json",
+     "exec-if": "which swaync-client",
+     "exec": "swaync-client -swb",
+     "on-click": "swaync-client -t -sw",
+     "on-click-right": "swaync-client -d -sw",
+     "escape": true
+   },
     "cpu": {
       "interval": 3,
       "format": "{usage:>2}%  ",
