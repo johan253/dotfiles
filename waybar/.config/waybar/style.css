@@ -1,7 +1,7 @@
 @define-color background #0d1117;
 @define-color foreground #010101;
 @define-color color7 #ffffff;
-@define-color color9 #0d6b9e;
+@define-color color9 #383c4a;
 
 * {
 	border: none;
@@ -178,6 +178,16 @@ window#waybar.hidden {
 	background: #383c4a;
 }
 
+#custom-nc {
+	margin-right: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 10px;
+	transition: none;
+	color: #ffffff;
+	background: #383c4a;
+}
+
 #temperature {
 	margin-right: 8px;
 	padding-left: 16px;
@@ -233,6 +243,7 @@ window#waybar.hidden {
 }
 
 #tray {
+	margin-right: 8px;
 	padding-left: 16px;
 	padding-right: 16px;
 	border-radius: 10px;

@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "custom/pacman"/*, "custom/mail"*/],
     "modules-center": ["clock", "custom/weather"],
-    "modules-right": ["pulseaudio", "custom/mem", "custom/gpu", "cpu", "backlight", "battery", "tray"],
+    "modules-right": ["pulseaudio", "custom/mem", "custom/gpu", "cpu", "backlight", "battery", "tray", "custom/nc"],
 
 
     //***************************
@@ -122,6 +122,14 @@
         "interval": 3,
         "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
         "tooltip": false,
+    },
+
+    "custom/nc": {
+        "format": "{}  ",
+        "tooltip": false,
+        "inverval": 10,
+        "exec": "swaync-client --count",
+        "on-click": "swaync-client -t",
     },
 
     "cpu": {
