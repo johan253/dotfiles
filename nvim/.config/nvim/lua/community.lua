@@ -11,10 +11,12 @@ return {
   -- import/override with your plugins folder
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.docker.lazydocker" },
+  { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.motion.nvim-surround" },
 }
