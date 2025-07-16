@@ -82,6 +82,10 @@ return {
         ["<Leader>am"] = { "<Cmd>CopilotChatModels<CR>", desc = "View/Select Models" },
         ["<Leader>aa"] = { "<Cmd>CopilotChatAgents<CR>", desc = "View/Select Agents" },
 
+        -- Change ^d and ^u to center when scrolling
+        ["<C-d>"] = { "<C-d>zz", desc = "Scroll down half page and center" },
+        ["<C-u>"] = { "<C-u>zz", desc = "Scroll up half page and center" },
+
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
       },
