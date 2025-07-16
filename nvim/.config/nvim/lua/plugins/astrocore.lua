@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
@@ -44,7 +44,7 @@ return {
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
-        wrap = false, -- sets vim.opt.wrap
+        wrap = true, -- sets vim.opt.wrap
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -76,6 +76,11 @@ return {
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         -- ["<Leader>b"] = { desc = "Buffers" },
+        ["<Leader>a"] = { desc = "AI Chat" },
+        ["<Leader>ac"] = { "<Cmd>CopilotChatToggle<CR>", desc = "Toggle Copilot Chat" },
+        ["<Leader>ar"] = { "<Cmd>CopilotChatReset<CR>", desc = "Reset Copilot Chat" },
+        ["<Leader>am"] = { "<Cmd>CopilotChatModels<CR>", desc = "View/Select Models" },
+        ["<Leader>aa"] = { "<Cmd>CopilotChatAgents<CR>", desc = "View/Select Agents" },
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
