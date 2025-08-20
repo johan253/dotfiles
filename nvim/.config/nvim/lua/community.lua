@@ -9,6 +9,9 @@ return {
   "AstroNvim/astrocommunity",
   -- { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
+  { import = "astrocommunity.recipes.astrolsp-auto-signature-help" },
+  { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
+  { import = "astrocommunity.recipes.vscode-icons" },
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.docker.lazydocker" },
   {
@@ -26,4 +29,5 @@ return {
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.yaml" },
 }
