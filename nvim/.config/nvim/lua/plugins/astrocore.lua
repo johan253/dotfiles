@@ -76,11 +76,15 @@ return {
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         -- ["<Leader>b"] = { desc = "Buffers" },
-        ["<Leader>a"] = { desc = "AI Chat" },
-        ["<Leader>ac"] = { "<Cmd>CopilotChatToggle<CR>", desc = "Toggle Copilot Chat" },
-        ["<Leader>ar"] = { "<Cmd>CopilotChatReset<CR>", desc = "Reset Copilot Chat" },
-        ["<Leader>am"] = { "<Cmd>CopilotChatModels<CR>", desc = "View/Select Models" },
-        ["<Leader>aa"] = { "<Cmd>CopilotChatAgents<CR>", desc = "View/Select Agents" },
+        --
+        -- OLD AI Chat mappings, using CopilotChat.nvim
+        -- ["<Leader>a"] = { desc = "AI Chat" },
+        -- ["<Leader>ac"] = { "<Cmd>CopilotChatToggle<CR>", desc = "Toggle Copilot Chat" },
+        -- ["<Leader>ar"] = { "<Cmd>CopilotChatReset<CR>", desc = "Reset Copilot Chat" },
+        -- ["<Leader>am"] = { "<Cmd>CopilotChatModels<CR>", desc = "View/Select Models" },
+        -- ["<Leader>aa"] = { "<Cmd>CopilotChatAgents<CR>", desc = "View/Select Agents" },
+
+        ["<Leader>a"] = { "<Cmd>Sidekick cli toggle name=copilot<CR>", desc = "Toggle Copilot CLI" },
 
         -- Change ^d and ^u to center when scrolling
         ["<C-d>"] = { "<C-d>zz", desc = "Scroll down half page and center" },

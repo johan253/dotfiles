@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.recipes.astrolsp-auto-signature-help" },
   { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
   { import = "astrocommunity.recipes.vscode-icons" },
+  { import = "astrocommunity.recipes.vscode" },
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.docker.lazydocker" },
   {
